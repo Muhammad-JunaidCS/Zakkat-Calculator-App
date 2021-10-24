@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ZAKKAT: "
+                    android:layout_marginLeft="25dp"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    >
+                </TextView>
+                <TextView
+                    android:id="@+id/zakkat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0.0"
+                    android:layout_marginLeft="25dp"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    >
+                </TextView>
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nisab Threshold"
+                android:layout_marginTop="25dp"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                >
+            </TextView>
+           <RadioGroup
+               android:id="@+id/radio_group"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               >
+               <RadioButton
+                   android:id="@+id/radio1"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:text="Value of Gold(approximately Rs.747,954 )"
+                   android:textSize="20sp"
+                   android:layout_marginTop="25dp"
+                   android:textStyle="italic"
+                   android:layout_marginLeft="5dp"
+                   >
+               </RadioButton>
+               <RadioButton
+                   android:id="@+id/radio2"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:text="Value of Silver(approximately Rs.80,933 )"
+                   android:textSize="20sp"
+                   android:layout_marginTop="5dp"
+                   android:textStyle="italic"
+                   android:layout_marginLeft="5dp">
+               </RadioButton>
+           </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cash"
+                android:layout_marginTop="25dp"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                >
+            </TextView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Cash in hand and \nin bank accounts"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="5dp"
+                    ></TextView>
+
+                <EditText
+                    android:id="@+id/cash_in_hand"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:hint="RS."
+                    android:inputType="numberDecimal"
+                    android:text="0"
+                    >
+                </EditText>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Cash given out in \nloans"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="5dp"
+                    ></TextView>
+
+                <EditText
+                    android:id="@+id/cash_in_loan"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:hint="RS."
+                    android:inputType="numberDecimal"
+                    android:text="0"
+                    >
+                </EditText>
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Liabilities"
+                android:layout_marginTop="25dp"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                >
+            </TextView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Borrowed money,\ngoods bought on \ncredit"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="5dp"
+                    ></TextView>
+
+                <EditText
+                    android:id="@+id/borrow_cash"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:hint="RS."
+                    android:inputType="numberDecimal"
+                    android:text="0"
+                    >
+                </EditText>
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Gold and Silver"
+                android:layout_marginTop="25dp"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                >
+            </TextView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Value of Gold that \nyou possess"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="5dp"
+                    ></TextView>
+
+                <EditText
+                    android:id="@+id/gold_possess"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:hint="RS."
+                    android:inputType="numberDecimal"
+                    android:text="0"
+                    >
+                </EditText>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Value of Silver that\nyou possess"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="5dp"
+                    ></TextView>
+
+                <EditText
+                    android:id="@+id/silver_posssess"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:hint="RS."
+                    android:inputType="numberDecimal"
+                    android:text="0"
+                    >
+                </EditText>
+            </LinearLayout>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Calculate"
+                android:layout_gravity="center"
+                android:onClick="Calculate"
+                >
+
+            </Button>
+            </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
+
