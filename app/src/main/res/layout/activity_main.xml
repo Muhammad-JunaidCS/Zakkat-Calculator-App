@@ -19,7 +19,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="ZAKKAT: "
+                    android:text="@string/zakkat"
                     android:layout_marginLeft="25dp"
                     android:textSize="30sp"
                     android:textStyle="bold"
@@ -29,7 +29,7 @@
                     android:id="@+id/zakkat"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="0.0"
+                    android:text="@string/_0_0"
                     android:layout_marginLeft="25dp"
                     android:textSize="30sp"
                     android:textStyle="bold"
@@ -39,7 +39,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Nisab Threshold"
+                android:text="@string/nisab_threshold"
                 android:layout_marginTop="25dp"
                 android:textSize="25sp"
                 android:textStyle="bold"
@@ -55,7 +55,7 @@
                    android:id="@+id/radio1"
                    android:layout_width="match_parent"
                    android:layout_height="match_parent"
-                   android:text="Value of Gold(approximately Rs.747,954 )"
+                   android:text="@string/value_of_gold_approximately_rs_747_954"
                    android:textSize="20sp"
                    android:layout_marginTop="25dp"
                    android:textStyle="italic"
@@ -66,7 +66,7 @@
                    android:id="@+id/radio2"
                    android:layout_width="match_parent"
                    android:layout_height="match_parent"
-                   android:text="Value of Silver(approximately Rs.80,933 )"
+                   android:text="@string/value_of_silver_approximately_rs_80_933"
                    android:textSize="20sp"
                    android:layout_marginTop="5dp"
                    android:textStyle="italic"
@@ -77,7 +77,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Cash"
+                android:text="@string/cash"
                 android:layout_marginTop="25dp"
                 android:textSize="25sp"
                 android:textStyle="bold"
@@ -93,20 +93,19 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:text="Cash in hand and \nin bank accounts"
+                    android:text="@string/cash_in_hand_and_nin_bank_accounts"
                     android:textSize="20sp"
                     android:layout_marginLeft="5dp"
-                    ></TextView>
-
+                    />
                 <EditText
                     android:id="@+id/cash_in_hand"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginLeft="15dp"
                     android:layout_marginRight="15dp"
-                    android:hint="RS."
+                    android:hint="@string/rs"
                     android:inputType="numberDecimal"
-                    android:text="0"></EditText>
+                    android:text="@string/_0"/>
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
@@ -116,10 +115,10 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:text="Cash given out in \nloans"
+                    android:text="@string/cash_given_out_in_nloans"
                     android:textSize="20sp"
                     android:layout_marginLeft="5dp"
-                    ></TextView>
+                    />
 
                 <EditText
                     android:id="@+id/cash_in_loan"
@@ -127,16 +126,16 @@
                     android:layout_height="match_parent"
                     android:layout_marginLeft="15dp"
                     android:layout_marginRight="15dp"
-                    android:hint="RS."
+                    android:hint="@string/rs"
                     android:inputType="numberDecimal"
-                    android:text="0"
+                    android:text="@string/_0"
                     >
                 </EditText>
             </LinearLayout>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Liabilities"
+                android:text="@string/liabilities"
                 android:layout_marginTop="25dp"
                 android:textSize="25sp"
                 android:textStyle="bold"
@@ -153,10 +152,10 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:text="Borrowed money,\ngoods bought on \ncredit"
+                    android:text="@string/borrowed_money_ngoods_bought_on_ncredit"
                     android:textSize="20sp"
                     android:layout_marginLeft="5dp"
-                    ></TextView>
+                    />
 
                 <EditText
                     android:id="@+id/borrow_cash"
@@ -164,16 +163,16 @@
                     android:layout_height="match_parent"
                     android:layout_marginLeft="15dp"
                     android:layout_marginRight="15dp"
-                    android:hint="RS."
+                    android:hint="@string/rs"
                     android:inputType="numberDecimal"
-                    android:text="0"
+                    android:text="@string/_0"
                     >
                 </EditText>
             </LinearLayout>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Gold and Silver"
+                android:text="@string/gold_and_silver"
                 android:layout_marginTop="25dp"
                 android:textSize="25sp"
                 android:textStyle="bold"
@@ -190,10 +189,10 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:text="Value of Gold that \nyou possess"
+                    android:text="@string/value_of_gold_that_nyou_possess"
                     android:textSize="20sp"
                     android:layout_marginLeft="5dp"
-                    ></TextView>
+                    />
 
                 <EditText
                     android:id="@+id/gold_possess"
@@ -201,9 +200,9 @@
                     android:layout_height="match_parent"
                     android:layout_marginLeft="15dp"
                     android:layout_marginRight="15dp"
-                    android:hint="RS."
+                    android:hint="@string/rs"
                     android:inputType="numberDecimal"
-                    android:text="0"
+                    android:text="@string/_0"
                     >
                 </EditText>
             </LinearLayout>
@@ -217,10 +216,10 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:text="Value of Silver that\nyou possess"
+                    android:text="@string/value_of_silver_that_nyou_possess"
                     android:textSize="20sp"
                     android:layout_marginLeft="5dp"
-                    ></TextView>
+                    />
 
                 <EditText
                     android:id="@+id/silver_posssess"
@@ -228,16 +227,16 @@
                     android:layout_height="match_parent"
                     android:layout_marginLeft="15dp"
                     android:layout_marginRight="15dp"
-                    android:hint="RS."
+                    android:hint="@string/rs"
                     android:inputType="numberDecimal"
-                    android:text="0"
+                    android:text="@string/_0"
                     >
                 </EditText>
             </LinearLayout>
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Calculate"
+                android:text="@string/calculate"
                 android:layout_gravity="center"
                 android:onClick="Calculate"
                 >
