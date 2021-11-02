@@ -70,6 +70,7 @@
                    android:textSize="20sp"
                    android:layout_marginTop="5dp"
                    android:textStyle="italic"
+                   android:checked="true"
                    android:layout_marginLeft="5dp">
                </RadioButton>
            </RadioGroup>

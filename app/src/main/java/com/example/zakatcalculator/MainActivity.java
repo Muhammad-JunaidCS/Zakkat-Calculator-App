@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
         goldValue=Float.parseFloat(valueOfGold.getText().toString());
         silverValue=Float.parseFloat(valueOfSilver.getText().toString());
         total=cashInHnd+cashGiven+goldValue+silverValue-borrowCash;
-        if((radioGroup.getCheckedRadioButtonId()==-1 || radioGroup.getCheckedRadioButtonId()==R.id.radio2) && total>80933)
+        if(radioGroup.getCheckedRadioButtonId()==R.id.radio2 && total>80933)
         {
             total=total*(2.5/100);
             zakkat.setText(Double.toString(total));
